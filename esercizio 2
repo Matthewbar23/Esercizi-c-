@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+float arearettangolo(float base, float altezza) {
+float arearet;
+arearet = base * altezza;
+return arearet;
+
+}
+float areatriangolo(float base1, float altezza1) {
+float areatriang;
+areatriang = (base1 * altezza1) / 2;
+return areatriang;
+
+}
+
+int main() {
+/* float i, j, z;
+cout << "Inserire il valore della base : ";
+cin >> i;
+cout << "Inserire il valore dell'altezza: ";
+cin >> j;
+z = arearettangolo(i, j);
+cout << "L'area del rettangolo è : ";
+cout << z;
+return 0;
+
+*/
+char car;
+float i, j, z ;
+cout << "Inserire la base : ";
+cin >> i;
+cout << "Inserire l'altezza : ";
+cin >> j;
+cout << "Inserire la opzione che si vuole eseguire : ";
+cin >> car;
+switch (car) {
+case'r':
+cout<< "Si è selezionato il calcolo dell'area del rettangolo";
+z = arearettangolo(i, j);
+cout << "L'area del triangolo è : " << z;
+break;
+case't':
+cout << "Si è selezionato il calcolo dell'area del rettangolo";
+z = areatriangolo(i, j);
+cout << "L'area del triangolo è : " << z;
+break;
+default:
+cout << "Error! The operator is not correct";
+break;
+}
+return 0;
+}
