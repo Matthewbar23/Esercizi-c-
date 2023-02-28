@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+float arearettangolo(float base, float altezza) {
+	float arearet;
+	arearet = base * altezza;
+	return arearet;
+
+}
+
+float areatriangolo(float base, float altezza) {
+	float areatria;
+	areatria = base * altezza;
+	return areatria;
+
+}
+int main() {
+	float i, j, z, m;
+	cout << "Inserire il valore della base : ";
+	cin >> i;
+	cout << "Inserire il valore dell'altezza: ";
+	cin >> j;
+	z = arearettangolo(i, j);
+	cout << "L'area del rettangolo è : ";
+	cout << z;
+	m = areatriangolo(i, j) / 2;
+	cout << "L'area del triangolo è : ";
+	cout << m;
+	return 0;
+}
